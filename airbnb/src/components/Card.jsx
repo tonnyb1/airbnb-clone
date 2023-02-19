@@ -15,5 +15,6 @@ export default function Card() {
                 <p>Life lessons with Katie Zaferes</p>
                 <p><b>From $136</b> / person</p>
         </section>
+        
     );
 }

@@ -44,10 +44,131 @@ section {
   font-size: 36px;
   font-weight: 600;
 }
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column;
+  position: relative;
+}
 .cardImg {
   border-radius: 9px;
+  width: 100%;
+  margin-bottom: 9px;
 }
 .cardStats {
   display: flex;
   align-items: center;
+}
+.cardList {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.cardTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardBadge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.journalNav {
+  height: 50px;
+  background-color: #F55A5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.journalTitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.journalImg {
+  padding: 7px;
+}
+
+.location {
+  display: flex;
+  align-items: inline;
+  gap: 20px;
+  padding-top: 50px;
+  padding: 10px 40px 10px 40px;
+  border-radius: 2px;
+}
+.pin {
+  height: 9.5px;
+  width: 7px;
+  border-radius: 0px;
+}
+
+.locationPin {
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0.17em;
+text-align: left;
+padding-left: 5px;
+padding-right: 12px;
+}
+.maps {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #918E9B;
+}
+.mapLink {
+  text-decoration: underline;
+  color: #918E9B;
+}
+.fujiImg {
+  height: 168px;
+  width: 125px;
+  border-radius: 5px;
+
+}
+.fujiTitle {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.journalDate {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.journalDescription {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.journalInfo {
+  padding-top: 19px;
+  padding-bottom: 19px;
 }

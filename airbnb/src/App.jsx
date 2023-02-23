@@ -1,17 +1,42 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Card from './components/card'
+import cardData from './data'
+import LocationData from './/datafile/journalData'
+import JournalNav from './components/JournalNav'
+import Location from './components/location'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const card =  cardData.map((card) => {
+    return (
+      <Card
+        key={card.id}
+        {...card}
+      />
+    )
+  })
+
+  const JournalLocation = LocationData.map((location) => {
+    return (
+      <Location
+        key={location.id}
+        {...location}
+      />
+    )
+  })
 
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <Card />
+      <section className="cardList">
+        {card}
+      </section>
+      <JournalNav />
+      {JournalLocation} 
+      
     </div>
   )
 }

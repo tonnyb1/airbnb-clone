@@ -5,7 +5,7 @@ import Fuji from "../assets/journal/fuji.png";
 export default function Location(props) {
     return (
         <div className="location">
-            <div>
+            <div className="fujiHold">
             <img src={props?.imageUrl} alt="pin" className="fujiImg"/>
             </div>
             <div className="journalInfo">

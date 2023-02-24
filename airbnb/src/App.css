@@ -105,10 +105,10 @@ section {
 .location {
   display: flex;
   align-items: inline;
-  gap: 20px;
-  padding-top: 50px;
+  gap: 20px; 
   padding: 10px 40px 10px 40px;
   border-radius: 2px;
+  border-bottom: 0.5px solid rgb(208, 202, 202);
 }
 .pin {
   height: 9.5px;
@@ -141,7 +141,10 @@ padding-right: 12px;
   height: 168px;
   width: 125px;
   border-radius: 5px;
-
+}
+.fujiHold {
+  display: flex;
+  align-items: center;
 }
 .fujiTitle {
   font-size: 25px;

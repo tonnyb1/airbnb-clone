@@ -6,6 +6,7 @@ import cardData from './data'
 import LocationData from './/datafile/journalData'
 import JournalNav from './components/JournalNav'
 import Location from './components/location'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
         {card}
       </section>
       <JournalNav />
-      {JournalLocation} 
+      {JournalLocation}
+      <Contact />
       
     </div>
   )

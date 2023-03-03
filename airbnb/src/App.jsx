@@ -4,9 +4,11 @@ import Hero from './components/Hero'
 import Card from './components/card'
 import cardData from './data'
 import LocationData from './/datafile/journalData'
+import boxes from './datafile/boxes'
 import JournalNav from './components/JournalNav'
 import Location from './components/location'
 import Contact from './components/Contact'
+import Box from './components/Box'
 
 function App() {
 
@@ -28,6 +30,15 @@ function App() {
     )
   })
 
+  const squareBoxes = boxes.map((box)=> {
+    return (
+      <Box 
+        key={box.id}
+        {...box}
+      />
+    )
+  })
+
   return (
     <div className="App">
       <Navbar />
@@ -38,6 +49,7 @@ function App() {
       <JournalNav />
       {JournalLocation}
       <Contact />
+      <Box />
       
     </div>
   )

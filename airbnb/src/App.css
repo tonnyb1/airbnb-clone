@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Poppins", "sans-serif";
+  padding: 10px;
 }
 
 .grey {
@@ -238,4 +239,8 @@ main {
   display: inline-block;
   margin-right: 4px;
   border-radius: 5px;
+}
+.btn {
+  height: 40px;
+  width: 200px;
 }

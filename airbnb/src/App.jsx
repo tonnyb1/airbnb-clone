@@ -10,6 +10,9 @@ import JournalNav from './components/JournalNav'
 import Location from './components/location'
 import Contact from './components/Contact'
 import Box from './components/Box'
+import Joke from './components/Joke'
+import jokes from './datafile/jokes'
+import jokesData from './datafile/jokes'
 
 function App(props) {
 
@@ -48,6 +51,14 @@ function App(props) {
     />
   ))
 
+  const jokes = jokesData.map(joke => (
+    <Joke 
+      id = {joke.id}
+      setup= {joke.setup}
+      punchline= {joke.punchline}
+    />
+  ))
+
   return (
     <div className="App">
       <Navbar />
@@ -59,7 +70,7 @@ function App(props) {
       {JournalLocation}
       <Contact />
       {squares}
-      
+      {jokes}
     </div>
   )
 }

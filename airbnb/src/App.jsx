@@ -13,6 +13,7 @@ import Box from './components/Box'
 import Joke from './components/Joke'
 import jokes from './datafile/jokes'
 import jokesData from './datafile/jokes'
+import FormData from './components/FormData'
 
 function App(props) {
 
@@ -71,6 +72,7 @@ function App(props) {
       <Contact />
       {squares}
       {jokes}
+      <FormData />
     </div>
   )
 }

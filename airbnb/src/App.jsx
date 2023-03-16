@@ -14,6 +14,7 @@ import Joke from './components/Joke'
 import jokes from './datafile/jokes'
 import jokesData from './datafile/jokes'
 import FormData from './components/FormData'
+import WindowTracker from './components/WindowTracker'
 
 function App(props) {
 
@@ -60,6 +61,14 @@ function App(props) {
     />
   ))
 
+  const [show, setShow] = React.useState(true)
+
+  function toggleShow() {
+    setShow(prevShow => !prevShow)
+  }
+
+  
+
   return (
     <div className="App">
       <Navbar />
@@ -73,6 +82,12 @@ function App(props) {
       {squares}
       {jokes}
       <FormData />
+      <div className="container">
+        <button onClick={toggleShow} className="buttonWin">
+            Toggle Window Tracker
+        </button>
+        {show && <WindowTracker />}
+      </div>
     </div>
   )
 }

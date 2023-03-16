@@ -4,8 +4,6 @@ export default function Joke (props) {
 
     const [isShown, setIsShown] = React.useState(false)
 
-    console.log(isShown)
-
     function toggle () {
         setIsShown(prevState => !prevState)
     }

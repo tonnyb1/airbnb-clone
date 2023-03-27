@@ -15,8 +15,9 @@ import jokes from './datafile/jokes'
 import jokesData from './datafile/jokes'
 import FormData from './components/FormData'
 import WindowTracker from './components/WindowTracker'
+import LandingPage from './components/LandingPage'
 
-function App(props) {
+export default function App(props) {
 
   const card =  cardData.map((card) => {
     return (
@@ -87,9 +88,9 @@ function App(props) {
             Toggle Window Tracker
         </button>
         {show && <WindowTracker />}
+        t<LandingPage />
+         
       </div>
     </div>
   )
 }
-
-export default App
